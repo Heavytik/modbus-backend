@@ -10,7 +10,7 @@ import java.util.List;
 @RestController
 public class MainController {
 
-    @CrossOrigin(origins = "https://amazing-elion-9a43e9.netlify.app/")
+    @CrossOrigin(origins = "https://amazing-elion-9a43e9.netlify.app")
     @PostMapping(
             value = "/api",
             consumes = MediaType.APPLICATION_JSON_VALUE)
