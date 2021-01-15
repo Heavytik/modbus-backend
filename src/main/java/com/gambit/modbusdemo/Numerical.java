@@ -13,10 +13,15 @@ public class Numerical {
 
     public String parseNumberToString() {
 
-        String str = switch (this.numberType) {
-            case LONG -> Long.toString(convertLong());
-            case FLOAT -> Float.toString(convertFloat());
-            case INTEGER_LOW -> "";
+        String str = "";
+
+        switch (this.numberType) {
+            case LONG:
+                str = str + Long.toString(convertLong());
+                break;
+            case FLOAT:
+                str = str + Float.toString(convertFloat());
+                break;
         };
 
         return str;
